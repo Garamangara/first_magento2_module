@@ -1,0 +1,15 @@
+<?php /** @var Steampfli\Agenda\Block\Category\View $block */ ?>
+    <p>Steampfli Category</p>
+    <h1><?php
+            $res = $block->getCategory();
+            echo $res->getTitle();
+        ?></h1>
+
+<?php foreach($block->getPostsPosition() as $categoryEvent): ?>
+    <h2><a href="/eavblog/event/view/id/<?php echo $categoryEvent[0]['entity_id'];?>"><?php echo $categoryEvent[0]['identifier']; ?></a></h2>
+<?php endforeach; ?>
+
+<?php //foreach($block->getCategoryEvents() as $categoryEvent): ?>
+<!--    --><?php ///** @var Steampfli\Agenda\Model\Event */ ?>
+<!--    <h2><a href="--><?php //echo $block->getEventUrl($categoryEvent);?><!--">--><?php //echo $categoryEvent->getTitle(); ?><!--</a></h2>-->
+<?php //endforeach; ?>

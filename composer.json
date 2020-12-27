@@ -1,0 +1,16 @@
+{
+  "name": "steampfli/magento2-module-agenda",
+  "description": "Steampfli Magento2 module Agenda",
+  "require": {
+    "php": "~7.0.0"
+  },
+  "type": "magento2-module",
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Steampfli\\Agenda\\": ""
+    }
+  }
+}

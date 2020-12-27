@@ -1,0 +1,6 @@
+<?php /** @var Steampfli\Agenda\Block\Events $block */ ?>
+    <h1>Steampfli Event</h1>
+<?php foreach($block->getEvents() as $event): ?>
+    <?php /** @var Steampfli\Agenda\Model\Event */ ?>
+    <h2><a href="<?php echo $block->getEventUrl($event);?>"><?php echo $event->getTitle(); ?></a></h2>
+<?php endforeach; ?>

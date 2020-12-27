@@ -1,0 +1,12 @@
+<?php /** @var Steampfli\Agenda\Block\View $block */ ?>
+<h1><?php
+        $header = $block->getEvent()->getTitle();
+        echo $header;
+    ?>
+</h1>
+<p><?php
+        $post = $block->getEvent()->getIdentities();
+        echo $post[0];
+    ?>
+</p>
+<!--<p>Это пост блога</p>-->

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * routes
+ * @copyright Copyright © 2020 Steampfli. All rights reserved.
+ * @author    batontram@gmail.com
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="admin">
+        <route id="steampfli_agenda" frontName="steampfli_agenda">
+            <module name="Steampfli_Agenda" />
+        </route>
+    </router>
+</config>

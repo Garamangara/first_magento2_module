@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * menu
+ * @copyright Copyright © 2020 Steampfli. All rights reserved.
+ * @author    batontram@gmail.com
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Steampfli_Agenda::event" title="Event" module="Steampfli_Agenda" sortOrder="50" parent="Magento_Backend::content" action="steampfli_agenda/event" resource="Steampfli_Agenda::event"/>
+        <add id="Steampfli_Agenda::category" title="Category" module="Steampfli_Agenda" sortOrder="60" parent="Magento_Backend::content" action="steampfli_agenda/category" resource="Steampfli_Agenda::category"/>
+    </menu>
+</config>

@@ -1,0 +1,6 @@
+<?php /** @var Steampfli\Agenda\Block\Category\Categorys $block */ ?>
+    <h1>Steampfli Category</h1>
+<?php foreach($block->getCategories() as $category): ?>
+    <?php /** @var Steampfli\Agenda\Model\Event */ ?>
+    <h2><a href="<?php echo $block->getCategoryUrl($category);?>"><?php echo $category->getTitle(); ?></a></h2>
+<?php endforeach; ?>
